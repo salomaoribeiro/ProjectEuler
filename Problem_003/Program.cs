@@ -22,7 +22,8 @@ namespace projeto_01
       {
         if ((Value % PrimeFactor != 0) )
         {
-          PrimeFactor = NextPrime(++PrimeFactor);
+          PrimeFactor += 2;
+          PrimeFactor = NextPrime(PrimeFactor);
         }
         else
         {
