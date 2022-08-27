@@ -1,4 +1,4 @@
-﻿var result = 0;
+﻿//var result = 0;
 long target = 1_000_000_000;
 
 //for (int i = 0; i < 1000; i++)
