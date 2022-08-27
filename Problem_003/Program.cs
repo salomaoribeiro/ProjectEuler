@@ -27,9 +27,10 @@ namespace projeto_01
         else
         {
           Value /= PrimeFactor;
-          System.Console.WriteLine($"É primo ({PrimeFactor}): {Value}");
         }
       }
+
+      System.Console.WriteLine($"{PrimeFactor}");
     }
 
     public static int NextPrime(int prime)
@@ -43,10 +44,11 @@ namespace projeto_01
     public static bool IsPrime(int value)
     { 
       int count = 2;
+      int number = value / 2 + 1;
 
-      while (count < value )
+      while (count < number)
       {
-        if ((value % count) == 0)
+        if (value % count == 0)
           return false;
         count++;
       }
